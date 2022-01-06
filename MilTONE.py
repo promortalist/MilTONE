@@ -38,17 +38,7 @@ def pentacostal2_pl(macaria,emotion):
   os.system("play ahriman2.mp3")
 
 
-def septuaginta_pl(macaria):
-    milton = open('macaria','r')
-    satan = milton.readlines()
-    pure_satan = re.sub(r"('|\\n|;)","", satan2)
-    tts = gTTS(pure_satan, lang='pl')
-    tts.save("thus_spoke_ahriman.mp3")
-    os.system("play thus_spoke_ahriman.mp3  speed 0.7 chorus 0.6 0.5 25 0.7 5 10 -t  ")
-
 if __name__ == '__main__':
   pentacostal(macaria)
-  septuaginta(macaria)
   pentacostal_pl(macaria)
-  septuaginta_pl(macaria)
 
